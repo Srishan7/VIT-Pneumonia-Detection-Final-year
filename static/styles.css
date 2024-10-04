@@ -1,0 +1,123 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header and Footer Styles */
+header, footer {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
+
+/* Main Content Styles */
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Heading Styles */
+h1, h2 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+/* Upload Container Styles */
+.upload-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+/* Form Input Styles */
+input[type="file"] {
+    margin: 20px 0;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Result Display Styles */
+#result {
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* Spinner Animation Styles */
+.spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border-left-color: #09f;
+    animation: spin 1s ease infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Explanation Section Styles */
+#explanation {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif;
+}
+
+#explanation p {
+    color: #333;
+    line-height: 1.6;
+}
+
+#explanation strong {
+    color: #0056b3;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 600px) {
+    .upload-container {
+        width: 90%;
+    }
+
+    h1, h2 {
+        font-size: 1.2em;
+    }
+}

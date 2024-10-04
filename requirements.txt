@@ -1,0 +1,6 @@
+Flask
+keras
+matplotlib
+tensorflow
+Flask-CORS
+Pillow
